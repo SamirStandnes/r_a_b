@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
+import "../../App.css";
 
 const NavBar = () => {
 	return (
 		<nav>
 		<img id='logo' src={logo}/>
-		<ul>
+		<ul id='navbar_ul_items'>
 			<li target="_blank"> Concept </li>
 			<li target="_blank"> Confidenciality </li>
 			<li target="_blank"> Contact </li>

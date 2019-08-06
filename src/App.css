@@ -1,7 +1,4 @@
 
-
-
-
 #blue{
   background-color: blue;
 }
@@ -13,6 +10,20 @@ nav {
 #logo {
   height: 5em
 }
+
+#navbar_ul_items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;background-color: pink;
+}
+
+.ContentSectionStructure {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 40%;
+}
+
 
 
 /*
