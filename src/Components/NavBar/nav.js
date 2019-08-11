@@ -1,52 +1,20 @@
-import React, { Component } from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBCollapse, MDBContainer,
-MDBHamburgerToggler } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import logo from "../../logo.svg";
+import "../../App.css";
 
-class NavbarPage extends Component {
-state = {
-  collapse1: false,
-  collapseID: ''
-}
-
-toggleCollapse = collapseID => () => {
-  this.setState(prevState => ({ collapseID: (prevState.collapseID !== collapseID ? collapseID : '') }));
-}
-
-toggleSingleCollapse = collapseId => {
-  this.setState({
-    ...this.state,
-    [collapseId]: !this.state[collapseId]
-  });
-}
-
-render() {
+const NavBar = () => {
   return (
-    <Router>
-      <MDBContainer>
-        <MDBNavbar color="" style={{ marginTop: '20px' }}>
-          <MDBContainer>
-          
-            <MDBHamburgerToggler color="" id="hamburger1" onClick={()=> this.toggleSingleCollapse('collapse1')} />
-              <MDBCollapse isOpen={this.state.collapse1} navbar>
-                <MDBNavbarNav left>
-                  <MDBNavItem active>
-                    <MDBNavLink to="#!">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">Link</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#!">Profile</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-          </MDBContainer>
-        </MDBNavbar>
-      </MDBContainer>
-    </Router>
-    );
-  }
-}
+    <nav>
+      <img id="logo" src={logo} />
+      <ul id="navbar_ul_items">
+        <li target="_blank"> Concept </li>
+        <li target="_blank"> Confidenciality </li>
+        <li target="_blank"> Contact </li>
+        <li target="_blank"> Prices </li>
+      </ul>
+      <i class="fas fa-bars"></i>
+    </nav>
+  );
+};
 
-export default NavbarPage;
+export default NavBar;
