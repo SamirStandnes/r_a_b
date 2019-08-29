@@ -11,10 +11,25 @@ nav {
 }
 
 #navbar_ul_items {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: pink;
+}
+
+#menu_icon{
+display: inherit;
+padding-right: 100px;
+}
+
+.menu_show {
+  display: block;
+}
+
+.menu_hide {
+  display: none;
 }
 
 
