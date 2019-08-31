@@ -1,7 +1,7 @@
 import React from "react";
 import './ContentSection.css';
 
-const ContentSection = (props): String => {
+const ContentSection = (props) => {
 	return (
 		// Need to add in a id equal to href in nav bar.
 		<div id={props.id_name} className="ContentSectionStructure">
@@ -17,7 +17,7 @@ const ContentSection = (props): String => {
 					pariatur expedita iusto, officiis odit architecto beatae
 					accusamus corporis!
 				</div>
-			</div>
+			</div>S
 		</div>
 	);
 };
