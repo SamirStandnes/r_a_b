@@ -1,29 +1,46 @@
 import React from "react";
 import logo from "../../logo.svg";
-import "../../App.css";
+//import "../../App.css";
+
+const style_menu_inactive = {
+	backgroundColor: 'blue',
+	display: 'block',
+	width: '100%'
+};
+
+const style_menu_active = {
+	backgroundColor: 'orange',
+	display: 'block',
+	width: '100%'
+
+};
+
+
 
 class NavBar extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      menu_toggled: true,
+      menu_toggled: false,
       menu_closed: "fas fa-bars",
       menu_open: "fas fa-times"
     };
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick() {
     this.setState({
       menu_toggled: !this.state.menu_toggled
     });
     console.log("pressed");
   }
-  render() {
+
+  	render() {
     return (
-      <nav style={{backgroundColor: 'yellow'}}>
-        <img id="logo" src={logo} />
-		<div className={this.state.menu_toggled ? "menu_hide" : "menu_show"}>
+      <nav>
+        {/*<img id="logo" src={logo} /> */}
+		<div style={(this.state.menu_toggled ? style_menu_active : style_menu_inactive)}>
           <ul id="navbar_ul_items">
             <li target="_blank"> Concept </li>
             <li target="_blank"> Confidenciality </li>
@@ -31,7 +48,7 @@ class NavBar extends React.Component {
             <li target="_blank"> Prices </li>
           </ul>
         </div>
-		<i id="menu_icon" onClick={this.handleClick} className={this.state.menu_toggled ? this.state.menu_closed: this.state.menu_open}></i>
+		<i id="menu_icon" onClick={this.handleClick} className={!this.state.menu_toggled ? this.state.menu_closed: this.state.menu_open}></i>
 		
       </nav>
     );
