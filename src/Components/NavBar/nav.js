@@ -12,7 +12,6 @@ const NavBar = () => {
         <li target="_blank"> Contact </li>
         <li target="_blank"> Prices </li>
       </ul>
-      <i class="fas fa-bars"></i>
     </nav>
   );
 };

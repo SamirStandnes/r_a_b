@@ -8,7 +8,11 @@ class NavBar extends React.Component {
 		this.state = {
 			'menu_toggled': false
 		};
+	th
+
 	}
+
+
 	render() {
 		return (
 			<nav>
