@@ -4,7 +4,7 @@ import logo from "../../logo.svg";
 
 const style_menu_inactive = {
 	backgroundColor: 'blue',
-	display: 'none',
+	display: 'flex',
 	width: '100%'
 };
 
@@ -37,6 +37,7 @@ class NavBar extends React.Component {
 
   	render() {
     return (
+    <div>
     <nav>
         {/*<img id="logo" src={logo} /> */}
 		<div style={(this.state.menu_toggled ? style_menu_active : style_menu_inactive)}>
@@ -47,8 +48,9 @@ class NavBar extends React.Component {
             <li target="_blank"> Prices </li>
           </ul>
     </div>
-		<i id="menu_icon" onClick={this.handleClick} className={!this.state.menu_toggled ? this.state.menu_closed: this.state.menu_open}></i>
+    <i id="menu_icon" onClick={this.handleClick} className={!this.state.menu_toggled ? this.state.menu_closed: this.state.menu_open}></i>
     </nav>
+    </div>
     );
   }
 }
