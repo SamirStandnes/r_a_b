@@ -5,14 +5,28 @@
 
 nav {
   display: flex;
-  align-items: center;
-  position: absolute;
   width: 100%;
+  background-color: aquamarine;
+  align-items: center;
+  height: 60px; 
+  position: fixed;
+  right: 0px;
+  font-size: 1.5em;
 }
 
 #navbar_ul_items {
-display: inline-flex;
+list-style-type: none;
+margin: auto;
+display: flex;
+align-self: center;
 }
+
+li {
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+
 
 /*
 #logo {
