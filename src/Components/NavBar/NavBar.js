@@ -1,27 +1,25 @@
 import React from "react";
 import logo from "../../logo.svg";
-//import "../../App.css";
 
-const style_menu_inactive = {
-	backgroundColor: 'blue',
-	display: 'flex',
-	width: '100%'
-};
+import "./NavBar.css";
 
-const style_menu_active = {
-	backgroundColor: 'orange',
-	display: 'flex',
-	width: '100%'
-};
+/*
+// Import material design for navbar
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+*/
+
+const style_menu_inactive = {};
+const style_menu_active = {};
 
 
 
 class NavBar extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      menu_toggled: false,
+      menu_toggled: true,
       menu_closed: "fas fa-bars",
       menu_open: "fas fa-times"
     };
@@ -35,22 +33,31 @@ class NavBar extends React.Component {
     console.log("pressed");
   }
 
-  	render() {
+  render() {
     return (
-    <div>
-    <nav>
-        {/*<img id="logo" src={logo} /> */}
-		<div style={(this.state.menu_toggled ? style_menu_active : style_menu_inactive)}>
-          <ul id="navbar_ul_items">
-            <li target="_blank"> Concept </li>
-            <li target="_blank"> Confidenciality </li>
-            <li target="_blank"> Contact </li>
-            <li target="_blank"> Prices </li>
-          </ul>
-    </div>
-    <i id="menu_icon" onClick={this.handleClick} className={!this.state.menu_toggled ? this.state.menu_closed: this.state.menu_open}></i>
-    </nav>
-    </div>
+      <div>
+        {/*
+
+        <i id="menu_icon" onClick={this.handleClick} className={!this.state.menu_toggled ? 'nav_bar': this.state.menu_open}></i> 
+                  <div
+            style={
+              this.state.menu_toggled ? style_menu_active : style_menu_inactive
+            }
+          ></div>
+
+      */} <img id="logo" src={logo} />
+
+        <nav className="nav_bar">
+         
+            <ul id="navbar_ul_items">
+              <li target="_blank"> Concept </li>
+              <li target="_blank"> Confidenciality </li>
+              <li target="_blank"> Contact </li>
+              <li target="_blank"> Prices </li>
+            </ul>
+          
+        </nav>
+      </div>
     );
   }
 }

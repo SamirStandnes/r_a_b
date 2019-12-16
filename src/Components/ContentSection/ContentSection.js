@@ -11,13 +11,9 @@ const ContentSection = (props) => {
 
 				{/* text are need to get text data of the section passed to it */}
 				<div>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Incidunt necessitatibus obcaecati quos a similique quam
-					quisquam voluptate reiciendis nesciunt, ducimus blanditiis
-					pariatur expedita iusto, officiis odit architecto beatae
-					accusamus corporis!
+					{props.text}
 				</div>
-			</div>S
+			</div>
 		</div>
 	);
 };

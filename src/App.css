@@ -3,35 +3,21 @@
 }
 
 
-nav {
+.content_sections {
   display: flex;
-  width: 100%;
-  background-color: aquamarine;
+  flex-direction: column;
   align-items: center;
-  height: 60px; 
-  position: fixed;
-  right: 0px;
-  font-size: 1.5em;
 }
-
-#navbar_ul_items {
-list-style-type: none;
-margin: auto;
-display: flex;
-align-self: center;
-}
-
-li {
-  padding-right: 15px;
-  cursor: pointer;
-}
-
 
 
 /*
-#logo {
-  height: 2em;
-}
+  display: flex;
+  width: 100%;
+  background-color: aquamarine; 
+  align-items: center;
+  position: fixed;
+  font-size: 1.5em;
+
 
 #navbar_ul_items {
   
@@ -68,12 +54,12 @@ position: absolute;
 */
 
 
-.content_sections {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 /*
+
+
+
+
 .App {
   text-align: center;
 }
