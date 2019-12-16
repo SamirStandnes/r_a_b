@@ -1,11 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
 
-// Import material design for navbar
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
-
 import "./App.css";
 
 import NavBar from "./Components/NavBar/NavBar";
@@ -17,7 +12,7 @@ class App extends React.Component {
     this.state = {
       concept: "Text Section 1"
     };
-  }
+  }  
 
   render() {
     return (
