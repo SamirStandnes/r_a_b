@@ -12,11 +12,12 @@ class App extends React.Component {
     this.state = {
       concept: "Text Section 1"
     };
-  }  
+  }
 
   render() {
     return (
       <div className="App">
+        <img id="logo" src={logo} />
         <NavBar />
         <div className="content_sections">
           <ContentSection id_name="blue" text={this.state.concept} />

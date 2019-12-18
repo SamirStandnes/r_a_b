@@ -1,7 +1,13 @@
 .App {
-  
 }
 
+#logo {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 20%;
+}
 
 .content_sections {
   display: flex;
