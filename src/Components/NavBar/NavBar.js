@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "../../logo.svg";
-
 import "./NavBar.css";
 
 /*
@@ -45,17 +43,16 @@ class NavBar extends React.Component {
             }
           ></div>
 
-      */} <img id="logo" src={logo} />
-
-        <nav className="nav_bar">
-         
-            <ul id="navbar_ul_items">
+      */} 
+         <nav className="nav_bar">
+            <div id="navbar_ul_items">
+            <ul >
               <li target="_blank"> Concept </li>
               <li target="_blank"> Confidenciality </li>
               <li target="_blank"> Contact </li>
               <li target="_blank"> Prices </li>
             </ul>
-          
+          </div>
         </nav>
       </div>
     );
