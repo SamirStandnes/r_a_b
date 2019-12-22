@@ -17,11 +17,21 @@ li {
 	cursor: pointer;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: #0092BF;
+}
+
 #navbar_ul_items {
 	
 	margin: auto;
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 
 /*
 
