@@ -6,23 +6,33 @@ import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import ContentSection from "./Components/ContentSection/ContentSection";
 
-console.log(data);
+function obj_to_array(obj) {
+  let result = [];
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      result.push([key, obj[key]]);
+    }
+  }
+  return result;
+}
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = data;
+    this.state = obj_to_array(data);
   }
- 
+
   render() {
     return (
       <div className="App">
         <img id="logo" src={logo} />
-        <NavBar />
+        <NavBar headings={this.state.map((element) => element[0])} />
         <div className="content_sections">
-          <ContentSection id_name="blue" text={this.state.Concept} />
-          <ContentSection id_name="white" text="'Text" />
-          <ContentSection id_name="blue" text="Text Section 3" />
+          {
+            this.state.map(element => (
+               <ContentSection id={element[0]} id_name={element[0]} text={element[1]} />
+            ))
+          }
         </div>
       </div>
     );

@@ -1,17 +1,32 @@
 import React from "react";
 import "./NavBar.css";
 
+
+
+
+const NavBar = props => {
+  return (
+    <div>
+      <nav className="nav_bar">
+        <div id="navbar_ul_items">
+        <ul>
+            {props.headings.map( (element) => 
+            <li key={element}> <a href={'#'+element} > {element} </a> </li> ) }
+        </ul>
+      </div>
+      </nav>
+    </div>
+  );
+};
+
 /*
 // Import material design for navbar
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
-*/
 
 const style_menu_inactive = {};
 const style_menu_active = {};
-
-
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -34,8 +49,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-        {/*
-
+  
         <i id="menu_icon" onClick={this.handleClick} className={!this.state.menu_toggled ? 'nav_bar': this.state.menu_open}></i> 
                   <div
             style={
@@ -43,10 +57,10 @@ class NavBar extends React.Component {
             }
           ></div>
 
-      */} 
-         <nav className="nav_bar">
-            <div id="navbar_ul_items">
-            <ul >
+      
+        <nav className="nav_bar">
+          <div id="navbar_ul_items">
+            <ul>
               <li target="_blank"> Concept </li>
               <li target="_blank"> Confidenciality </li>
               <li target="_blank"> Contact </li>
@@ -58,5 +72,7 @@ class NavBar extends React.Component {
     );
   }
 }
+
+*/
 
 export default NavBar;

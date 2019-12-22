@@ -1,17 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Gupter&display=swap');
 
-
-@font-face {
-    font-family: 'aristotelica_display_trialXLt';
-    src: url('Font/aristotelica_display_extralight_trial-webfont.woff2') format('woff2'),
-         url('Font/aristotelica_display_extralight_trial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-	
-}
 
 body {
   margin: 0;
-  font-family: 'aristotelica_display_trialXLt';
+  font-family: 'Gupter', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: pink;
