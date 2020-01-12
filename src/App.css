@@ -18,8 +18,25 @@
 }
 
 #contact_email {
-  color: #0092BF;
+  color: #0092bf;
+  text-justify: center;
+  margin: auto;
 }
+
+#highlight {
+  color: #0092bf;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+}
+
+th, td {
+  padding-right: 25px;
+}
+
 /*
   display: flex;
   width: 100%;
@@ -62,8 +79,6 @@ position: absolute;
 }
 
 */
-
-
 
 /*
 
