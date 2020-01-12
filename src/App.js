@@ -41,7 +41,40 @@ class App extends React.Component {
           <div id="Prices" className="ContentSectionStructure">
             <div>
               <h2> Prices </h2>
-              <div>Prices Price</div>
+              <div>
+                <table>
+                  <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>Personal - Standard</td>
+                    <td>60</td>
+                    <td>USD / hour</td>
+                  </tr>
+                  <tr>
+                    <td>Business </td>
+                    <td>70</td>
+                    <td>USD / hour</td>
+                  </tr>
+
+                  <tr>
+                    <td>Personal - Encrypted</td>
+                    <td>90</td>
+                    <td>USD / hour</td>
+                  </tr>
+                </table>
+                <br />
+                These prices only apply{" "}
+                <span style={{ "text-decoration": "underline" }}>
+                  {" "}
+                  after a final agreement of purchase is finalized
+                </span>
+                .
+                <br />
+                Prices are listed in USD, but most payment options and currencies are accepted.
+              </div>
             </div>
           </div>
 
@@ -49,21 +82,24 @@ class App extends React.Component {
             <div>
               <h2> Contact </h2>
               <div>
-                The starting point for every customer relationship is always
+                Send us an email @:
                 <span id="contact_email">
                   {" "}
                   <a href="mailto: contact@rent-a-brain.community?">
                     contact@rent-a-brain.community{" "}
                   </a>
                 </span>
+                to get in touch with a our team. We are here to handle any
+                requests and/or questions.
                 <br />
                 <br />
-                If you are interested in the “Personal - Encrypted” product
-                please use what is colloquially called a “burner email account”
-                when reaching out. The email should be sent with a subject line
-                of “Interested in PE” and nothing else, we will then reply with
-                further communication instructions. If you do not know how to
-                set up a “burner email account”, read this simple guide.
+                If you are interested in the “Personal - Encrypted” product, the
+                email should be sent with a subject line of “Interested in PE”
+                and nothing else, we will then reply with further communication
+                instructions. We strongly suggest sending the email from an
+                address that does not include any personally identifiable
+                information, if you are interested in the "Personal - Encrypted"
+                product.
               </div>
             </div>
           </div>
@@ -76,6 +112,12 @@ class App extends React.Component {
 export default App;
 
 /*
+
+ Rent-a-Brain® is only available in Europe (EU and
+                EEA), althoug remote consultation can be provided on a
+                case-by-case basis for clients located outside of Europe.
+                <br />
+                <br />
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
