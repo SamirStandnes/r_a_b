@@ -1,5 +1,5 @@
 {
-  "short_name": "rAb",
+  "short_name": "rentAbrain",
   "name": "Rent-A-Brain",
   "icons": [
     {
@@ -11,5 +11,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#0092bf",
-  "background_color": "#ffffff"
+  "background_color": "#0092bf"
 }
