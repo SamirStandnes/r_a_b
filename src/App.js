@@ -49,20 +49,20 @@ class App extends React.Component {
                     <th></th>
                   </tr>
                   <tr>
-                    <td>Personal - Standard</td>
-                    <td>60</td>
-                    <td>USD / hour</td>
+                    <td>Personal</td>
+                    <td>60 USD/hour</td>
+            
                   </tr>
                   <tr>
-                    <td>Business </td>
-                    <td>70</td>
-                    <td>USD / hour</td>
+                    <td>Business</td>
+                    <td>70 USD/hour</td>
+                   
                   </tr>
 
                   <tr>
-                    <td>Personal - Encrypted</td>
-                    <td>90</td>
-                    <td>USD / hour</td>
+                    <td>Personal Encrypted</td>
+                    <td>90 USD/hour</td>
+                    
                   </tr>
                 </table>
                 <br />
@@ -85,7 +85,7 @@ class App extends React.Component {
                 Send us an email @:
                 <span id="contact_email">
                   {" "}
-                  <a href="mailto: contact@rent-a-brain.community?">
+                  <a href="mailto: contact@rent-a-brain.community?" style={{"text-decoration": "none"}}>
                     contact@rent-a-brain.community{" "}
                   </a>
                 </span>
@@ -98,8 +98,8 @@ class App extends React.Component {
                 and nothing else, we will then reply with further communication
                 instructions. We strongly suggest sending the email from an
                 address that does not include any personally identifiable
-                information, if you are interested in the "Personal - Encrypted"
-                product.
+                information.
+               
               </div>
             </div>
           </div>
