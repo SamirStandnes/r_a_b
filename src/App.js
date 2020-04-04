@@ -21,85 +21,89 @@ class App extends React.Component {
     super(props);
     this.state = {
       data: obj_to_array(data),
-      headings: ["Concept", "Confidentiality", "Prices", "Contact"]
+      headings: ["Concept", "Confidentiality", "Prices", "Contact"],
     };
   }
 
   render() {
     return (
       <div className="App">
-        <img id="logo" src={logo} />
-        <NavBar headings={this.state.headings.map(element => element)} />
-        <div className="content_sections">
-          {this.state.data.map(element => (
-            <ContentSection
-              id={element[0]}
-              id_name={element[0]}
-              text={element[1]}
-            />
-          ))}
-          <div id="Prices" className="ContentSectionStructure">
-            <div>
-              <h2> Prices </h2>
+        <div className="b1">
+          <img id="logo" src={logo} />
+        </div>
+        <div className="background_2">
+          <NavBar headings={this.state.headings.map((element) => element)} />
+          <div className="content_sections">
+            {this.state.data.map((element) => (
+              <ContentSection
+                id={element[0]}
+                id_name={element[0]}
+                text={element[1]}
+              />
+            ))}
+            <div id="Prices" className="ContentSectionStructure">
               <div>
-                <table>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th></th>
-                  </tr>
-                  <tr>
-                    <td>Personal</td>
-                    <td>60 USD/hour</td>
-            
-                  </tr>
-                  <tr>
-                    <td>Business</td>
-                    <td>70 USD/hour</td>
-                   
-                  </tr>
+                <h2> Prices </h2>
+                <div>
+                  <table>
+                    <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td>Personal</td>
+                      <td>60 USD/hour</td>
+                    </tr>
+                    <tr>
+                      <td>Business</td>
+                      <td>70 USD/hour</td>
+                    </tr>
 
-                  <tr>
-                    <td>Personal Encrypted</td>
-                    <td>90 USD/hour</td>
-                    
-                  </tr>
-                </table>
-                <br />
-                These prices only apply{" "}
-                <span style={{ "text-decoration": "underline" }}>
-                  {" "}
-                  after a final agreement of purchase is finalized
-                </span>
-                .
-                <br />
-                Prices are listed in USD, but most payment options and currencies are accepted.
+                    <tr>
+                      <td>Personal Encrypted</td>
+                      <td>90 USD/hour</td>
+                    </tr>
+                  </table>
+                  <br />
+                  These prices only apply{" "}
+                  <span style={{ "text-decoration": "underline" }}>
+                    {" "}
+                    after a final agreement of purchase is finalized
+                  </span>
+                  .
+                  <br />
+                  Prices are listed in USD, but most payment options and
+                  currencies are accepted.
+                </div>
               </div>
             </div>
-          </div>
 
-          <div id="Contact" className="ContentSectionStructure">
-            <div>
-              <h2> Contact </h2>
+            <div id="Contact" className="ContentSectionStructure">
               <div>
-                Send us an email @:
-                <span id="contact_email">
-                  {" "}
-                  <a href="mailto: contact@rent-a-brain.community?" style={{"text-decoration": "none"}}>
-                    contact@rent-a-brain.community{" "}
-                  </a>
-                </span>
-                to get in touch with a our team. We are here to handle any
-                requests and/or questions.
-                <br />
-                <br />
-                If you are interested in the “Personal - Encrypted” product, the
-                email should be sent with a subject line of “Interested in PE”
-                and nothing else, we will then reply with further communication
-                instructions. We strongly suggest sending the email from an
-                address that does not include any personally identifiable
-                information.
-               
+                <h2> Contact </h2>
+                <div>
+                  Send us an email @:
+                  <span id="contact_email">
+                    {" "}
+                    <a
+                      href="mailto: contact@rent-a-brain.community?"
+                      style={{ "text-decoration": "none" }}
+                    >
+                      contact@rent-a-brain.community{" "}
+                    </a>
+                  </span>
+                  to get in touch with a our team. We are here to handle any
+                  requests and/or questions.
+                  <br />
+                  <br />
+                  If you are interested in the “Personal - Encrypted” product,
+                  the email should be sent with a subject line of “Interested in
+                  PE” and nothing else, we will then reply with further
+                  communication instructions. We strongly suggest sending the
+                  email from an address that does not include any personally
+                  identifiable information.
+                </div>
               </div>
             </div>
           </div>

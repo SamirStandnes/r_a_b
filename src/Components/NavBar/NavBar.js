@@ -7,14 +7,12 @@ import "./NavBar.css";
 const NavBar = props => {
   return (
     <div>
-      <nav className="nav_bar">
-        <div id="navbar_ul_items">
-        <ul>
+      <div className="nav_bar">
+        
             {props.headings.map( (element) => 
-            <li key={element}> <a href={'#'+element} > {element} </a> </li> ) }
-        </ul>
+            <div id="navbar_ul_items" key={element}> <a href={'#'+element} > {element.toUpperCase()} </a> </div> ) }
+      
       </div>
-      </nav>
     </div>
   );
 };

@@ -2,10 +2,10 @@
   display: flex;
   flex-flow: column;
   text-align: center;
-  width: 65%;
+  width: 60%;
   padding: 15px 15px 15px 15px;
   height: auto#; /* temporary variable, to be removed*/
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -14,7 +14,8 @@
   .ContentSectionStructure {
     height: auto;
     width: 85%;
-     margin-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: left;
   }
 }
 
