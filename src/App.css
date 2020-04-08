@@ -68,6 +68,10 @@ td {
     font-size: 0.8em;
   }
 
+  .content_sections {
+    line-height: 15px;
+  }
+
   #logo {
     width: 65%;
     margin-top: 0px;
