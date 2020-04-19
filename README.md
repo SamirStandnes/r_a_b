@@ -1,3 +1,3 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This is a landing page for concultancy (concept). 
+This is a landing page for a concultancy business (concept). 
